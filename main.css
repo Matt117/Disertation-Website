@@ -58,3 +58,80 @@ img {
         filter: grayscale(0%);
     }
 }
+
+
+
+
+/*   Dropdown     */
+ul {
+  text-align: left; /* menu nav bar*/
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+ul li {
+  font: bold 12px/18px sans-serif; /* menu nav bar drop down*/
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #4C4C4C; 
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+
+  transition: all 0.2s;
+}
+ul li:hover { 					/* menu nav bar change color when mouse over*/
+  background: #337f99;
+  color: #fff;
+}
+ul li ul {								/* menu nav bar drop down menu defualt settings*/
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: opacity 0.2s;
+
+}
+ul li ul li { 							/* menu nav bar drop down menu cursor is not hovering over*/
+  background: #337f99; 
+  display: block; 
+  color: #fff; 
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: white;  /* menu nav bar drop down menu cursor hovering over*/
+color:black;}
+ul li:hover ul {
+	
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+divGrid {
+    width: 300px;
+    height: 600px;
+}
+
+divGrid divGrid {
+    width: 100px;
+    height: 100px;
+    outline: 1px solid;
+    float: left;
+}
+
+

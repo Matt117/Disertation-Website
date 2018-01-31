@@ -1,22 +1,46 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('maxresdefault.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+           <link rel="stylesheet" href="main.css">
+</head>
+
     
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="main.css">
-    </head>
+
+<div id="toprightmininav">  <!-- small top right menu-->
+<p> My Orders | My Account | Sign In | Register | Website feedback | Help  </p>
+</div>
+
+
+<div id="logoContainer">  <!-- container for the logo -->
+
+<img id="weblogo" src="./Images/logo.png" alt="The Website Logo"> <!-- website logo-->
+
+</div>
     
-    <div id="topBar"> <!-- top black bar div -->
-<HR COLOR="white"> <!-- white hr across page -->
-
-
-
-
-
-
+    
+    
+    
 <div id="navBar"> <!-- nav bar -->
 <ul>
 
@@ -37,33 +61,36 @@
 
 	
 
-  </li>
+
   
   
 </ul>
 
-</div>
-
-</div>
-
-
-
-
-
-
-</div>
-    <body>
-        
-        <h1>Home</h1>
-     
+</div>    
     
-        
-        <p>
-            This site is built to freely teach basic Italian to English students, and basic English to Italian students.
-        </p>
-        
-        
-        
-    </body>
+    
+    
+    
+    
+<body>
+    
+    
+    
+
+    
+    
+    
+    
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color:dimgrey;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax"></div>
+
+</body>
 </html>
 

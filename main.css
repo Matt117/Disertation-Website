@@ -12,15 +12,37 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-
-
+    
+    
+}
+    /* unvisited link */
+a:link {
+    color: white;
+     text-decoration: none;
 }
 
+/* visited link */
+a:visited {
+    color: white;
+     text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+     text-decoration: none;
+    }
 
 
 
 h1, h2, h3, h4, h5, h6 {
-    color: #222;
+    color: #292;
     font-weight: 600;
     line-height: 1.3;
 }
@@ -67,32 +89,37 @@ img {
 
 /*   Dropdown     */
 ul {
-  text-align: left; /* menu nav bar*/
+  text-align: center; /* menu nav bar*/
+
   display: inline;
   margin: 0;
-  padding: 15px 4px 17px 0;
+  padding: 0px 0px 0px 0;
   list-style: none;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #fff;
+ text-decoration: none;
+ 
 }
 
 ul li {
   font: bold 12px/18px sans-serif; /* menu nav bar drop down*/
   display: inline-block;
+  width: 20%;
   margin-right: -4px;
   position: relative;
-  padding: 15px 20px;
-  background: #4C4C4C; 
+  padding: 15px 0px;
+  background: #3C3C3C; 
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
+    
 
   transition: all 0.2s;
 }
 ul li:hover { 					/* menu nav bar change color when mouse over*/
-  background: #337f99;
+  background: #5C5C5C;
   color: #fff;
 }
 ul li ul {								/* menu nav bar drop down menu defualt settings*/
@@ -100,7 +127,7 @@ ul li ul {								/* menu nav bar drop down menu defualt settings*/
   position: absolute;
   top: 48px;
   left: 0;
-  width: 150px;
+  width: 500%;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -111,9 +138,10 @@ ul li ul {								/* menu nav bar drop down menu defualt settings*/
 
 }
 ul li ul li { 							/* menu nav bar drop down menu cursor is not hovering over*/
-  background: #337f99; 
+  background: #5C5C5C; 
   display: block; 
   color: #fff; 
+    text-decoration: none;
   text-shadow: 0 -1px 0 #000;
 }
 ul li ul li:hover { background: white;  /* menu nav bar drop down menu cursor hovering over*/

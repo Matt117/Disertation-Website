@@ -12,7 +12,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    
+      background: #3C3C3C; 
     
 }
     /* unvisited link */
@@ -90,7 +90,7 @@ img {
 /*   Dropdown     */
 ul {
   text-align: center; /* menu nav bar*/
-
+   
   display: inline;
   margin: 0;
   padding: 0px 0px 0px 0;
@@ -121,6 +121,7 @@ ul li {
 ul li:hover { 					/* menu nav bar change color when mouse over*/
   background: #5C5C5C;
   color: #fff;
+    
 }
 ul li ul {								/* menu nav bar drop down menu defualt settings*/
   padding: 0;
@@ -143,6 +144,7 @@ ul li ul li { 							/* menu nav bar drop down menu cursor is not hovering over*
   color: #fff; 
     text-decoration: none;
   text-shadow: 0 -1px 0 #000;
+    
 }
 ul li ul li:hover { background: white;  /* menu nav bar drop down menu cursor hovering over*/
 color:black;}
@@ -151,6 +153,7 @@ ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
+    
 }
 
 
@@ -184,19 +187,13 @@ div.Grid div.Grid {
   vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
+.infoBox {
+    position: absolute;
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+    top:  25%;
+    left : 10%;
+    width: 80%;
+    height: 600px;
+    background-color: rgba(300, 300, 300, 0.4);font-size:36px;
 }
 
